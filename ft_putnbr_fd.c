@@ -6,7 +6,7 @@
 /*   By: mbenkhat <mbenkhat@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/07 13:38:44 by mbenkhat          #+#    #+#             */
-/*   Updated: 2021/11/11 15:23:22 by mbenkhat         ###   ########.fr       */
+/*   Updated: 2021/11/12 19:19:06 by mbenkhat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ static void	ft_putn(long int n, int fd)
 		ft_putchar_fd('-', fd);
 		ln = -ln;
 	}
-	if (ln <= 9)
+	if (ln <= 9 && ln)
 	{
 		ft_putchar_fd(ln + '0', fd);
 	}

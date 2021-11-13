@@ -6,7 +6,7 @@
 /*   By: mbenkhat <mbenkhat@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/08 11:29:54 by mbenkhat          #+#    #+#             */
-/*   Updated: 2021/11/09 12:48:54 by mbenkhat         ###   ########.fr       */
+/*   Updated: 2021/11/13 10:37:52 by mbenkhat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,13 +25,7 @@ char	*ft_strrchr(const char *s, int c)
 	{
 		i--;
 	}
-	if (s[i] == '\0')
-	{
-		if (a == '\0')
-		{
-			return ((char *)&s[i]);
-		}
-		return (NULL);
-	}
-	return ((char *)s + i);
+	if (s[i] == a)
+		return ((char *)&(s[i]));
+	return (NULL);
 }

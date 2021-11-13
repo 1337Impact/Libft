@@ -6,7 +6,7 @@
 /*   By: mbenkhat <mbenkhat@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/06 13:00:08 by mbenkhat          #+#    #+#             */
-/*   Updated: 2021/11/11 16:51:00 by mbenkhat         ###   ########.fr       */
+/*   Updated: 2021/11/12 20:10:20 by mbenkhat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,12 +44,10 @@ char	*ft_strtrim(char const *s1, char const *set)
 	while (checker((char *)set, (char)s1[j]) && j > i)
 		j--;
 	trim = (char *)malloc(j - i + 2);
-	if (ft_strlen(s1) == 0 && ft_strlen(set) == 0)
-		return (trim);
 	if (trim == NULL)
 		return (NULL);
 	x = 0;
-	while (i <= j)
+	while (i <= j && ((*s1) || (*set)))
 	{
 		trim[x++] = s1[i++];
 	}

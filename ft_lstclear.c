@@ -6,7 +6,7 @@
 /*   By: mbenkhat <mbenkhat@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/11 20:19:47 by mbenkhat          #+#    #+#             */
-/*   Updated: 2021/11/12 11:19:32 by mbenkhat         ###   ########.fr       */
+/*   Updated: 2021/11/13 09:56:31 by mbenkhat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,4 +28,3 @@ void	ft_lstclear(t_list **lst, void (*del)(void*))
 	}
 	head = NULL;
 }
-

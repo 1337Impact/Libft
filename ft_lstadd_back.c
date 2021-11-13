@@ -6,7 +6,7 @@
 /*   By: mbenkhat <mbenkhat@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/11 17:46:24 by mbenkhat          #+#    #+#             */
-/*   Updated: 2021/11/11 19:59:16 by mbenkhat         ###   ########.fr       */
+/*   Updated: 2021/11/12 21:12:01 by mbenkhat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 {
 	t_list	*hold;
 
-	if (*lst == NULL)
+	if (!(*lst) || !(new))
 		*lst = new;
 	else
 	{

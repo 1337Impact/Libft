@@ -6,7 +6,7 @@
 /*   By: mbenkhat <mbenkhat@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/07 12:36:26 by mbenkhat          #+#    #+#             */
-/*   Updated: 2021/11/11 14:24:10 by mbenkhat         ###   ########.fr       */
+/*   Updated: 2021/11/12 12:32:24 by mbenkhat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 void	ft_putstr_fd(char *s, int fd)
 {
 	if (!s)
-		s[0] = 0;
+		return ;
 	while (*s)
 	{
 		write(fd, s, 1);
